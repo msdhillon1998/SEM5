@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>Paradise Hotel</title>
+<center><h1 style="color:Black">Paradise</h1></center>
+<body background="5.jpg" >
+<hr/>
+<style>
+table,th,td
+{
+border:1px white;
+border-collapse:collapse;
+padding:12px;
+}
+th
+{
+text-align:center;
+}
+</style>
+</head>
+<table>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Overview.html">Oveview</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Log.html">Log In/Register</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rates.html">Rates</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Menu.html">Menu</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rooms.html">Rooms</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="HMS.html">Home</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Contact.html">Contact Us</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Review.html">Review</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+
+</table>
+<form>
+<br/>
+<center>
+Manager Id-<input type="text" name="" id="1" size="10" maxlength="3" placeholder=""></center>
+<br/>
+<center>
+Password - <input type="password" name="" id="2" size="10" maxlength="10" placeholder=""></center>
+<br/>
+</form>
+<center>
+<button onclick="display()">LOG IN</button>
+<script>
+function display()
+{
+var a,b
+a=document.getElementById("1").value;
+a=Number(a)
+b=document.getElementById("2").value;
+if(a==165 && b=="Manager")
+{
+var myWindow = window.open("Lolo.html", "_self");
+}
+else
+{
+window.alert("Wrong Manager Id or Password.")
+log()
+}
+function log()
+{
+var myWindow = window.open("ChiCho.html", "_self");
+}
+}
+</script>
+</body>
+</html>

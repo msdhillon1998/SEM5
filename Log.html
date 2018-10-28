@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<title>Paradise Hotel</title>
+<center><h1 style="color:White";>Paradise</h1></center>
+<body background="1.1.jpg">
+<hr/>
+<style>
+table,th,td
+{
+border:1px white;
+border-collapse:collapse;
+padding:12px;
+}
+th
+{
+text-align:center;
+}
+</style>
+</head>
+<table>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Overview.html">Oveview</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="ChiCho.html">Check In/Check Out</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rates.html">Rates</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Menu.html">Menu</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rooms.html">Rooms</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="HMS.html">Home</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Contact.html">Contact Us</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Review.html">Review</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+
+</table>
+<form>
+<br/>
+<center><h3 style="color:White";>Room No.</h3>
+<input type="text" name="" id="1" size="10" maxlength="3" placeholder=""></center>
+<br/>
+<center><h3 style="color:White";>Pass Key</h3><input type="password" name="" id="2" size="10" maxlength="10" placeholder=""></center>
+<br/>
+</form>
+<center>
+<button onclick="display()">LOG IN</button>
+<button onclick="display1()">REGISTER</button>
+<script>
+function display()
+{
+var a,b
+a=document.getElementById("1").value;
+a=Number(a)
+b=document.getElementById("2").value;
+b=Number(b)
+if(a==101 && b==123101)
+{
+ram()
+}
+else if(a==102 && b==123102)
+{
+shyam()
+}
+else if(a==103 && b==123103)
+{
+mohan()
+}
+else if(a==104 && b==123104)
+{
+rohan()
+}
+else if(a==105 && b==123105)
+{
+varun()
+}
+else
+{
+window.alert("Wrong Room-No or Password.")
+log()
+}
+function log()
+{
+var myWindow = window.open("Log.html", "_self");
+}
+function ram()
+{
+var myWindow = window.open("ram.html", "_self");
+}
+function shyam()
+{
+var myWindow = window.open("shyam.html", "_self");
+}
+function mohan()
+{
+var myWindow = window.open("mohan.html", "_self");
+}
+function rohan()
+{
+var myWindow = window.open("rohan.html", "_self");
+}
+function varun()
+{
+var myWindow = window.open("varun.html", "_self");
+}
+}
+function display1()
+{
+var myWindow = window.open("reg.html", "_self");
+}
+</script>
+</body>
+</html>

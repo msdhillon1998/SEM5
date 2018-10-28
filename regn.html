@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<title>Paradise Hotel</title>
+<center><h1 style="color:red";>Paradise</h1></center>
+<body style="background-color:YELLOW">
+<hr/>
+<style>
+table,th,td
+{
+border:1px white;
+border-collapse:collapse;
+padding:12px;
+}
+th
+{
+text-align:center;
+}
+</style>
+</head>
+<table>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Overview.html">Oveview</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="ChiCho.html">Check In/Check Out</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rates.html">Rates</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Menu.html">Menu</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Rooms.html">Rooms</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="HMS.html">Home</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Contact.html">Contact Us</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"><a href="Review.html">Review</a></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+<th style="background-color:white"></th>
+</table>
+<form>
+<br/>
+<center>
+<input type="text" name="" id="1" size="15" maxlength="20" placeholder="First Name"></center>
+<br/>
+<center>
+<input type="text" name="" id="2" size="15" maxlength="20" placeholder="Last Name"></center>
+<br/>
+<center>
+<input type="text" name="" id="3" size="15" maxlength="20" placeholder="New Password"></center>
+<br/>
+<center>
+<input type="text" name="" id="4" size="15" maxlength="20" placeholder="Repeat Password"></center>
+<br/>
+<center>
+<input type="text" name="" id="5" size="15" maxlength="40" placeholder="Email.Id"></center>
+<br/>
+</form>
+<center>
+<button onclick="don()">REGISTER</button>
+</center>
+<script>
+function don()
+{
+var a,b,c,d,e
+a=document.getElementById("1").value;
+b=document.getElementById("2").value;
+c=document.getElementById("3").value;
+d=document.getElementById("4").value;
+e=document.getElementById("5").value;
+if(a!="" && b!="" && c!="" && d!="" && e!="")
+{
+if(c==d)
+{
+alert("Congratulations!Your ID has been created.")
+regn()
+}
+else
+{
+window.alert("Give same passwords")
+regn()
+}
+}
+else
+{
+window.alert("Please fill all fields.")
+regn()
+}
+function regn()
+{
+var myWindow = window.open("reg.html", "_self");
+}
+}
+
+</script>
+</body>
+</html>
